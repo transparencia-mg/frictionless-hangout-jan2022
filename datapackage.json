@@ -10,8 +10,7 @@
           {
             "name": "COD",
             "type": "integer",
-            "format": "default",
-            "description": "Lorem **markdownum** tollit, paulatimque Ereboque? Caput fretum lacus quid tamen\nlongoque fert posita pavonibus eminus, quidem sanguine nec letique mari rapida\nfidem secuta. Diem regnat Clytumque et cultros venit glomerataque genitore?\nAegide procul cum frustra centum dantibus ferro si terra Actaeona enim tardi\nreligata *quamvis fruticumque*. Violentus ventis manus *erat in tigride*,\nBacchus et **iam medio** restat ignes alta.\n\n1. Qui nunc opposui admirabile spes\n2. Hoc inquit\n3. Solvit et tandem ciborum\n4. Celare nec excutiant abibas\n5. Oro obscenae si velox enim concitus excipit\n\nCum nuntia: per qui pater artes aquas carior abstinet [ductor petebam\nGallicus](http://mortale.io/) melius interius vinxit! Omnia sonitu ales dominum\n[summa animaque sidera](http://ipsam.net/) stetit, at prodere totiens: ipse et\ndeprensa sua Phoebe. Et feritate terga. Elusaque Tartara turbine famulos murmur\nfenestris.\n"
+            "format": "default"
           },
           {
             "name": "NOME",
