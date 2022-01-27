@@ -1,0 +1,21 @@
+fields:
+- name: COD
+  type: integer
+- name: POP_2013
+  type: number
+  groupChar: "."
+  decimalChar: ","
+- name: PIB_2013
+  type: number
+  groupChar: "."
+  decimalChar: ","
+- name: PIB_PER_CAPITA_2013
+  type: number
+  groupChar: "."
+  decimalChar: ","
+primaryKey: COD
+foreignKeys:
+- fields: COD
+  reference:
+    resource: estados
+    fields: COD

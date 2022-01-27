@@ -1,0 +1,20 @@
+name: CI/CD for publishing data packages
+
+on: [push]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+            python-version: 3.9
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt --upgrade pip
+      - name: Publish data package to CKAN with dpckan
+        env:
+            CKAN_KEY: ${{ secrets.CKAN_KEY }} 
+        run: dpckan dataset update --datastore --ckan-host https://homologa.cge.mg.gov.br/ --ckan-key "$CKAN_KEY"

@@ -1,0 +1,123 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "estados",
+      "path": "data/estados.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "COD",
+            "type": "integer",
+            "format": "default",
+            "description": "Lorem **markdownum** tollit, paulatimque Ereboque? Caput fretum lacus quid tamen\nlongoque fert posita pavonibus eminus, quidem sanguine nec letique mari rapida\nfidem secuta. Diem regnat Clytumque et cultros venit glomerataque genitore?\nAegide procul cum frustra centum dantibus ferro si terra Actaeona enim tardi\nreligata *quamvis fruticumque*. Violentus ventis manus *erat in tigride*,\nBacchus et **iam medio** restat ignes alta.\n\n1. Qui nunc opposui admirabile spes\n2. Hoc inquit\n3. Solvit et tandem ciborum\n4. Celare nec excutiant abibas\n5. Oro obscenae si velox enim concitus excipit\n\nCum nuntia: per qui pater artes aquas carior abstinet [ductor petebam\nGallicus](http://mortale.io/) melius interius vinxit! Omnia sonitu ales dominum\n[summa animaque sidera](http://ipsam.net/) stetit, at prodere totiens: ipse et\ndeprensa sua Phoebe. Et feritate terga. Elusaque Tartara turbine famulos murmur\nfenestris.\n"
+          },
+          {
+            "name": "NOME",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "SIGLA",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "primaryKey": "COD"
+      },
+      "title": "Estados brasileiros",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Contém as seguintes informações para os estados brasileiros\n\n- Código\n- Nome\n- Sigla\n",
+      "scheme": "file",
+      "hashing": "md5",
+      "stats": {
+        "hash": "097584d7061ac7df66f8d20e233b5520",
+        "bytes": 495,
+        "fields": 3,
+        "rows": 27
+      }
+    },
+    {
+      "name": "pib-per-capita",
+      "path": "data/pib-per-capita.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "COD",
+            "type": "integer"
+          },
+          {
+            "name": "POP_2013",
+            "type": "number",
+            "groupChar": ".",
+            "decimalChar": ","
+          },
+          {
+            "name": "PIB_2013",
+            "type": "number",
+            "groupChar": ".",
+            "decimalChar": ","
+          },
+          {
+            "name": "PIB_PER_CAPITA_2013",
+            "type": "number",
+            "groupChar": ".",
+            "decimalChar": ","
+          }
+        ],
+        "primaryKey": "COD",
+        "foreignKeys": [
+          {
+            "fields": "COD",
+            "reference": {
+              "resource": "estados",
+              "fields": "COD"
+            }
+          }
+        ]
+      },
+      "title": "PIB per capita",
+      "format": "csv",
+      "encoding": "utf-8-sig",
+      "scheme": "file",
+      "hashing": "md5",
+      "dialect": {
+        "delimiter": ";",
+        "skipInitialSpace": true
+      }
+    }
+  ],
+  "keywords": [
+    "estados",
+    "brasil",
+    "federação"
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "version": "0.0.0.9000",
+  "contributors": [
+    {
+      "title": "Francisco Alves",
+      "role": "author"
+    }
+  ],
+  "name": "frictionless-hangout-jan2022",
+  "owner_org": "controladoria-geral-do-estado-cge",
+  "title": "Frictionless Data community hangout - Jan/2022",
+  "description": "Demo repo for the Frictionless Data community hangout about the Data package manager for CKAN (dpckan)",
+  "ckan_hosts": {
+    "https://homologa.cge.mg.gov.br/": {
+      "estados": "d9cffbf1-d2a0-4f2c-8702-9606230ef319",
+      "pib-per-capita": "a3bafd5d-46bf-49ba-9f33-d0c8a65548a4",
+      "datapackage.json": "672f1f46-ff56-412e-960a-e4a0423523a5"
+    }
+  }
+}

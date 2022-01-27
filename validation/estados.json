@@ -1,0 +1,83 @@
+{
+  "version": "4.23.2",
+  "time": 0.012,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "estados",
+        "path": "data/estados.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "COD",
+              "type": "integer",
+              "format": "default",
+              "description": "C\u00f3digo de dois d\u00edgitos que identificam o estado. Como on, this is COBRA KAI",
+              "title": "C\u00f3digo do Estado"
+            },
+            {
+              "name": "NOME",
+              "type": "string",
+              "format": "default",
+              "title": "Nome do Estado"
+            },
+            {
+              "name": "SIGLA",
+              "type": "string",
+              "format": "default",
+              "title": "TESTE",
+              "description": "OUTRO TESTE"
+            }
+          ],
+          "primaryKey": "COD"
+        },
+        "title": "Estados brasileiros",
+        "format": "csv",
+        "encoding": "utf-8",
+        "description": "Cont\u00e9m as seguintes informa\u00e7\u00f5es para os estados brasileiros\n\n- C\u00f3digo\n- Nome\n- Sigla\n",
+        "scheme": "file",
+        "hashing": "md5",
+        "stats": {
+          "hash": "097584d7061ac7df66f8d20e233b5520",
+          "bytes": 495,
+          "fields": 3,
+          "rows": 27
+        }
+      },
+      "time": 0.012,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}

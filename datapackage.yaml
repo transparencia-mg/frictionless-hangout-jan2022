@@ -1,0 +1,43 @@
+profile: tabular-data-package
+resources:
+- name: estados
+  path: data/estados.csv
+  profile: tabular-data-resource
+  schema: schemas/estados.yaml
+  title: Estados brasileiros
+  format: csv
+  encoding: utf-8
+  description: |
+    Contém as seguintes informações para os estados brasileiros
+
+    - Código
+    - Nome
+    - Sigla
+- name: pib-per-capita
+  path: data/pib-per-capita.csv
+  profile: tabular-data-resource
+  schema: schemas/pib-per-capita.yaml
+  title: PIB per capita
+  format: csv
+  encoding: utf-8
+keywords:
+- estados
+- brasil
+- federação
+licenses:
+- name: CC0-1.0
+  title: CC0 1.0
+  path: https://creativecommons.org/publicdomain/zero/1.0/
+version: 0.0.0.9000
+contributors:
+- title: Francisco Alves
+  role: author
+name: frictionless-hangout-jan2022
+owner_org: controladoria-geral-do-estado-cge
+title: Frictionless Data community hangout - Jan/2022
+description: Demo repo for the Frictionless Data community hangout about the Data package manager for CKAN (dpckan)
+ckan_hosts:
+  https://homologa.cge.mg.gov.br/:
+    estados: d9cffbf1-d2a0-4f2c-8702-9606230ef319
+    pib-per-capita: a3bafd5d-46bf-49ba-9f33-d0c8a65548a4
+    datapackage.json: 672f1f46-ff56-412e-960a-e4a0423523a5

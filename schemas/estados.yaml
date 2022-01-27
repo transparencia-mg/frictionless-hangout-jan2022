@@ -1,0 +1,30 @@
+fields:
+- name: COD
+  type: integer
+  format: default
+  description: |
+    Lorem **markdownum** tollit, paulatimque Ereboque? Caput fretum lacus quid tamen
+    longoque fert posita pavonibus eminus, quidem sanguine nec letique mari rapida
+    fidem secuta. Diem regnat Clytumque et cultros venit glomerataque genitore?
+    Aegide procul cum frustra centum dantibus ferro si terra Actaeona enim tardi
+    religata *quamvis fruticumque*. Violentus ventis manus *erat in tigride*,
+    Bacchus et **iam medio** restat ignes alta.
+
+    1. Qui nunc opposui admirabile spes
+    2. Hoc inquit
+    3. Solvit et tandem ciborum
+    4. Celare nec excutiant abibas
+    5. Oro obscenae si velox enim concitus excipit
+
+    Cum nuntia: per qui pater artes aquas carior abstinet [ductor petebam
+    Gallicus](http://mortale.io/) melius interius vinxit! Omnia sonitu ales dominum
+    [summa animaque sidera](http://ipsam.net/) stetit, at prodere totiens: ipse et
+    deprensa sua Phoebe. Et feritate terga. Elusaque Tartara turbine famulos murmur
+    fenestris.
+- name: NOME
+  type: string
+  format: default
+- name: SIGLA
+  type: string
+  format: default
+primaryKey: COD

@@ -1,0 +1,97 @@
+{
+  "version": "4.23.2",
+  "time": 0.08,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "name": "pib-per-capita",
+        "path": "data/pib-per-capita.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "COD",
+              "type": "integer"
+            },
+            {
+              "name": "POP_2013",
+              "type": "number",
+              "groupChar": ".",
+              "decimalChar": ","
+            },
+            {
+              "name": "PIB_2013",
+              "type": "number",
+              "groupChar": ".",
+              "decimalChar": ","
+            },
+            {
+              "name": "PIB_PER_CAPITA_2013",
+              "type": "number",
+              "groupChar": ".",
+              "decimalChar": ","
+            }
+          ],
+          "primaryKey": "COD",
+          "foreignKeys": [
+            {
+              "fields": "COD",
+              "reference": {
+                "resource": "estados",
+                "fields": "COD"
+              }
+            }
+          ]
+        },
+        "title": "PIB per capita",
+        "format": "csv",
+        "encoding": "utf-8-sig",
+        "scheme": "file",
+        "hashing": "md5",
+        "stats": {
+          "hash": "ff296ada55aef23adc4ee4e6b1da6513",
+          "bytes": 1221,
+          "fields": 4,
+          "rows": 27
+        },
+        "dialect": {
+          "delimiter": ";",
+          "skipInitialSpace": true
+        }
+      },
+      "time": 0.08,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}
